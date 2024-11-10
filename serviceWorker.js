@@ -4,7 +4,14 @@ const assets = [
     "/images/",
     "/index.html",
     "/style.css",
-    "/serviceWorker.js"
+    "/serviceWorker.js",
+    "/css/about.css",
+    "css/contact.css",
+    "/css/courses.css",
+    "/css/style.css",
+    "/pages/about.html",
+    "/pages/contact.html",
+    "/pages/courses.html"
 ]
 this.addEventListener("install", (event) => {
     event.waitUntil(
