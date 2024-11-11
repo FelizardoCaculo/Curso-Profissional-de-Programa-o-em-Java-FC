@@ -58,6 +58,8 @@ h1 {
 }
 h2 {
   font-size: 1.8rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 h3 {
   font-size: 1.6rem;
@@ -151,6 +153,7 @@ header {
   background: var(--color-bg1);
   height: 32rem;
   padding: 1rem;
+  height: 100vh;
 }
 .categories h1 {
   line-height: 1;
@@ -160,6 +163,7 @@ header {
   display: grid;
   grid-template-columns: 40% 60%; /*Divided in 2 blocks as shown in values percentage*/
   padding: 1rem;
+  margin-top: 2rem;
 }
 .categories__left {
   margin-right: 4rem;
@@ -208,17 +212,16 @@ header {
 }
 /*========== COURSES SECTION Styles ============*/
 .courses {
-  margin-top: 10rem;
+  margin-top: 1rem;
 }
 .courses__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 .course {
   background: var(--color-bg1);
   text-align: center;
-  border: 1px solid transparent;
   transition: var(--transition);
 }
 .course:hover {
@@ -227,48 +230,13 @@ header {
 }
 .course__info {
   padding: 0.9rem;
+  background: var(--color-bg);
 }
 .course__info p {
   margin: 1.2rem 0 2rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
   font-size: 0.9rem;
 }
-/*========== FAQs SECTION Styles ============*/
-.faqs {
-  background: var(--color-bg1);
-  /*👇 👇👇0=>x side, 0=> y side 3rem for the blur. rgba=>0.5 50% of transparency 👇👇👇*/
-  box-shadow: insert 0 0 3rem rgba(0, 0, 0, 0.5);
-}
-.faqs__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
-}
-.faq {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  height: fit-content;
-  background: var(--color-primary);
-  cursor: pointer;
-}
-.faq h4 {
-  font-size: 1rem;
-  line-height: 2.3;
-}
-.faq__icon {
-  align-self: flex-start; /*Align the icon in the begining of the box content*/
-  font-size: 1.2rem;
-}
-.faq p {
-  margin-top: 0.8rem;
-  display: none; /*To hide the answers*/
-}
-.faq.open p {
-  display: block; /*injected by JavaSCript to show the answer*/
-  background: var(--color-bg1);
-  padding: 0.5rem;
-}
+
 /*========== TESTIMONIAL SECTION Styles ============*/
 .testimonials__container {
   overflow-y: hidden;
@@ -430,7 +398,7 @@ footer ul li a:hover {
     margin-bottom: 4rem;
   }
   .header__container {
-    gap: 0;
+    gap: 1rem;
     padding-bottom: 3rem;
   }
   /*========== CATEGORIES SECTION Styles ============*/
@@ -447,9 +415,6 @@ footer ul li a:hover {
   /*========== POPULAR COURSES SECTION Styles ============*/
   .courses {
     margin-top: 0;
-  }
-  .courses__container {
-    grid-template-columns: 1fr 1fr;
   }
   /*========== FAQs SECTION Styles ============*/
   .faqs__container {
