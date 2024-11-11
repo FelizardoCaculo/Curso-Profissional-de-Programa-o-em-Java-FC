@@ -51,8 +51,9 @@
 }
 .team__container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
+    align-items: center;
 }
 .team__member{
     background: var(--color-bg2);
