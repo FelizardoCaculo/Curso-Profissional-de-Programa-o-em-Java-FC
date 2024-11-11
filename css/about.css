@@ -48,6 +48,7 @@
 .team{
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    margin-top: 5rem;
 }
 .team__container{
     display: grid;
@@ -57,9 +58,11 @@
 }
 .team__member{
     background: var(--color-bg2);
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid transparent;
     position: relative;
+    width: 20rem;
+    margin: 0 auto;
 }
 .team__member:hover{
     background: transparent;
@@ -67,6 +70,7 @@
 }
 .team__member-image img{
     filter: saturate(0);
+    object-fit: contain;
 }
 .team__member-image:hover img{
     filter: saturate(1);
@@ -106,7 +110,7 @@
         margin: 0 auto;
     }
     .team__container{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:1fr;
         gap: 1rem;
     }
     .team__member{
@@ -126,16 +130,20 @@
         grid-template-columns: 1fr;
     }
     .team{
-        padding: 2rem;
+        padding: 1rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     .team__container{
         grid-template-columns: 1fr;
         gap: 1rem;
         width: 100%;
+        overflow-x: auto;
+        padding: 1rem;
     }
     .team__member{
         padding: 0;
-        width: 100%;
     }
     .team__member p{
         margin-bottom: 1.5rem;
