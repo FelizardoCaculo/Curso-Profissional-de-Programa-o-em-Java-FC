@@ -54,10 +54,10 @@ h5 {
   line-height: 1.2;
 }
 h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 h3 {
   font-size: 1.6rem;
@@ -77,7 +77,7 @@ img {
   display: inline-block;
   background: var(--color-white);
   color: var(--color-black);
-  padding: 1rem 2rem;
+  padding: 0.5rem 0.5rem;
   border: 1px solid transparent;
   font-weight: 500;
   transition: var(--transition);
@@ -132,7 +132,7 @@ header {
   position: relative;
   top: 5rem; /*to start after navbar*/
   overflow: hidden;
-  height: 70vh;
+  height: fit -90px;;
   margin-bottom: 5rem;
 }
 .header__container {
@@ -141,9 +141,10 @@ header {
   align-items: center;
   gap: 5rem;
   height: 100%; /*To center the items in the height of the section*/
+  padding-bottom: 2rem;
 }
 .header__left p {
-  margin: 1rem 0 2.4rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
+  margin: 1rem 0 1.4rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
 }
 /*========== CATEGORIES SECTION Styles ============*/
 .categories {
@@ -425,7 +426,7 @@ footer ul li a:hover {
   }
   /*========== HEADER SECTION Styles ============*/
   header {
-    height: 52vh;
+    height: 70vh;
     margin-bottom: 4rem;
   }
   .header__container {
@@ -473,7 +474,7 @@ footer ul li a:hover {
   }
   /*========== HEADER SECTION Styles ============*/
   header {
-    height: 100vh;
+    height: fit-content;
   }
   .header__container {
     grid-template-columns: 1fr;
